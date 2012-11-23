@@ -191,6 +191,10 @@ public class BaseActivity extends CoreServiceActivity implements
 			Action.POWER_STB.execute(getCommands());
 			return true;
 
+		case R.id.channel:
+			showActivity(ChannelActivity.class);
+			return true;
+			
 		case R.id.tv_power:
 			Action.POWER_TV.execute(getCommands());
 			return true;
@@ -413,7 +417,7 @@ public class BaseActivity extends CoreServiceActivity implements
 		}
 	}
 
-	private void setKeepConnected(final boolean keepConnected) {
+	protected void setKeepConnected(final boolean keepConnected) {
 		if (isKeepingConnection != keepConnected) {
 			isKeepingConnection = keepConnected;
 			executeWhenCoreServiceAvailable(new Runnable() {

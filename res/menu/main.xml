@@ -6,6 +6,10 @@
         android:title="@string/menu_tvstb_power" android:icon="@drawable/ic_action_combo_power" android:showAsAction="always">
     </item>
     <item
+        android:id="@+id/channel"
+        android:title="@string/menu_channel" android:icon="@drawable/ic_action_numpad" android:showAsAction="always">
+    </item>
+    <item
         android:id="@+id/tv_power"
         android:title="@string/menu_tv_power">
     </item>

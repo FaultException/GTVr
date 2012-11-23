@@ -20,5 +20,8 @@
       <item name="android:layout_centerHorizontal">true</item>
       <item name="android:background">@android:color/transparent</item>
   </style>
+  <style name="channelButton">
+      <item name="android:textSize">34dp</item>
+  </style>
 
 </resources>
