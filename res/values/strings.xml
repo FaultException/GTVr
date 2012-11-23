@@ -53,6 +53,7 @@
   <string name="shortcut_detail_bd">BD</string>
   <string name="shortcut_detail_tv">TV</string>
   <string name="shortcut_detail_avr">AV Receiver</string>
+  <string name="shortcut_detail_stb">STB</string>
 
   <string name="shortcut_detail_button">button</string>
   <string name="shortcut_color_red">RED</string>

@@ -22,315 +22,323 @@ import com.google.anymote.Key.Code;
 
 /**
  * Lists common control actions on a Google TV box.
- *
+ * 
  */
 public enum Action {
 
-  BACKSPACE {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DEL);
-    }
-  },
+    BACKSPACE {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DEL);
+        }
+    },
 
-  CLICK_DOWN {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.BTN_MOUSE, Key.Action.DOWN);
-    }
-  },
+    CLICK_DOWN {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.BTN_MOUSE, Key.Action.DOWN);
+        }
+    },
 
-  CLICK_UP {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.BTN_MOUSE, Key.Action.UP);
-    }
-  },
+    CLICK_UP {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.BTN_MOUSE, Key.Action.UP);
+        }
+    },
 
-  DPAD_CENTER {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DPAD_CENTER);
-    }
-  },
+    DPAD_CENTER {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DPAD_CENTER);
+        }
+    },
 
-  DPAD_DOWN {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DPAD_DOWN);
-    }
-  },
+    DPAD_DOWN {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DPAD_DOWN);
+        }
+    },
 
-  DPAD_DOWN_PRESSED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_DOWN, Key.Action.DOWN);
-    }
-  },
+    DPAD_DOWN_PRESSED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_DOWN, Key.Action.DOWN);
+        }
+    },
 
-  DPAD_DOWN_RELEASED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_DOWN, Key.Action.UP);
-    }
-  },
+    DPAD_DOWN_RELEASED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_DOWN, Key.Action.UP);
+        }
+    },
 
-  DPAD_LEFT {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DPAD_LEFT);
-    }
-  },
+    DPAD_LEFT {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DPAD_LEFT);
+        }
+    },
 
-  DPAD_LEFT_PRESSED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_LEFT, Key.Action.DOWN);
-    }
-  },
+    DPAD_LEFT_PRESSED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_LEFT, Key.Action.DOWN);
+        }
+    },
 
-  DPAD_LEFT_RELEASED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_LEFT, Key.Action.UP);
-    }
-  },
+    DPAD_LEFT_RELEASED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_LEFT, Key.Action.UP);
+        }
+    },
 
-  DPAD_RIGHT {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DPAD_RIGHT);
-    }
-  },
+    DPAD_RIGHT {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DPAD_RIGHT);
+        }
+    },
 
-  DPAD_RIGHT_PRESSED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_RIGHT, Key.Action.DOWN);
-    }
-  },
+    DPAD_RIGHT_PRESSED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_RIGHT, Key.Action.DOWN);
+        }
+    },
 
-  DPAD_RIGHT_RELEASED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_RIGHT, Key.Action.UP);
-    }
-  },
+    DPAD_RIGHT_RELEASED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_RIGHT, Key.Action.UP);
+        }
+    },
 
-  DPAD_UP {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DPAD_UP);
-    }
-  },
+    DPAD_UP {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DPAD_UP);
+        }
+    },
 
-  DPAD_UP_PRESSED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_UP, Key.Action.DOWN);
-    }
-  },
+    DPAD_UP_PRESSED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_UP, Key.Action.DOWN);
+        }
+    },
 
-  DPAD_UP_RELEASED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.key(Code.KEYCODE_DPAD_UP, Key.Action.UP);
-    }
-  },
+    DPAD_UP_RELEASED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.key(Code.KEYCODE_DPAD_UP, Key.Action.UP);
+        }
+    },
 
-  ENTER {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_ENTER);
-    }
-  },
+    ENTER {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_ENTER);
+        }
+    },
 
-  ESCAPE {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_ESCAPE);
-    }
-  },
+    ESCAPE {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_ESCAPE);
+        }
+    },
 
-  GO_TO_DVR {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_DVR);
-    }
-  },
+    GO_TO_DVR {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_DVR);
+        }
+    },
 
-  GO_TO_GUIDE {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_GUIDE);
-    }
-  },
+    GO_TO_GUIDE {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_GUIDE);
+        }
+    },
 
-  GO_TO_LIVE_TV {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_LIVE);
-    }
-  },
+    GO_TO_LIVE_TV {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_LIVE);
+        }
+    },
 
-  NAVBAR {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_SEARCH);
-    }
-  },
+    NAVBAR {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_SEARCH);
+        }
+    },
 
-  POWER {
-    @Override
-    public void execute(ICommandSender sender) {
-        sender.keyPress(Code.KEYCODE_POWER);
-    }
-  },
+    POWER {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_POWER);
+        }
+    },
 
-  VOLUME_DOWN {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_VOLUME_DOWN);
-    }
-  },
+    VOLUME_DOWN {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_VOLUME_DOWN);
+        }
+    },
 
-  VOLUME_UP {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_VOLUME_UP);
-    }
-  },
+    VOLUME_UP {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_VOLUME_UP);
+        }
+    },
 
-  ZOOM_IN {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_ZOOM_IN);
-    }
-  },
+    ZOOM_IN {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_ZOOM_IN);
+        }
+    },
 
-  ZOOM_OUT {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_ZOOM_OUT);
-    }
-  },
+    ZOOM_OUT {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_ZOOM_OUT);
+        }
+    },
 
-  COLOR_RED {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_PROG_RED);
-    }
-  },
+    COLOR_RED {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_PROG_RED);
+        }
+    },
 
-  COLOR_GREEN {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_PROG_GREEN);
-    }
-  },
+    COLOR_GREEN {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_PROG_GREEN);
+        }
+    },
 
-  COLOR_YELLOW {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_PROG_YELLOW);
-    }
-  },
+    COLOR_YELLOW {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_PROG_YELLOW);
+        }
+    },
 
-  COLOR_BLUE {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_PROG_BLUE);
-    }
-  },
+    COLOR_BLUE {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_PROG_BLUE);
+        }
+    },
 
-  POWER_BD {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_BD_POWER);
-    }
-  },
+    POWER_BD {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_BD_POWER);
+        }
+    },
 
-  INPUT_BD {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_BD_INPUT);
-    }
-  },
+    INPUT_BD {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_BD_INPUT);
+        }
+    },
 
-  POWER_AVR {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_AVR_POWER);
-    }
-  },
+    POWER_AVR {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_AVR_POWER);
+        }
+    },
 
-  INPUT_AVR {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_AVR_INPUT);
-    }
-  },
+    INPUT_AVR {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_AVR_INPUT);
+        }
+    },
 
-  POWER_TV {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_TV_POWER);
-    }
-  },
+    POWER_TV {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_TV_POWER);
+        }
+    },
 
-  INPUT_TV {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_TV_INPUT);
-    }
-  },
+    POWER_STB {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_STB_POWER);
+        }
+    },
 
-  BD_TOP_MENU {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_BD_TOP_MENU);
-    }
-  },
+    INPUT_TV {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_TV_INPUT);
+        }
+    },
 
-  BD_MENU {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_BD_POPUP_MENU);
-    }
-  },
+    BD_TOP_MENU {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_BD_TOP_MENU);
+        }
+    },
 
-  EJECT {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_EJECT);
-    }
-  },
+    BD_MENU {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_BD_POPUP_MENU);
+        }
+    },
 
-  AUDIO {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_AUDIO);
-    }
-  },
+    EJECT {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_EJECT);
+        }
+    },
 
-  SETTINGS {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_SETTINGS);
-    }
-  },
+    AUDIO {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_AUDIO);
+        }
+    },
 
-  CAPTIONS {
-    @Override
-    public void execute(ICommandSender sender) {
-      sender.keyPress(Code.KEYCODE_INSERT);
-    }
-  };
+    SETTINGS {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_SETTINGS);
+        }
+    },
 
-  /**
-   * Executes the action.
-   *
-   * @param sender  interface to the remote box
-   */
-  public abstract void execute(ICommandSender sender);
+    CAPTIONS {
+        @Override
+        public void execute(ICommandSender sender) {
+            sender.keyPress(Code.KEYCODE_INSERT);
+        }
+    };
+
+    /**
+     * Executes the action.
+     * 
+     * @param sender
+     *            interface to the remote box
+     */
+    public abstract void execute(ICommandSender sender);
 }
