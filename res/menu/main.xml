@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/tvstb_power"
-        android:title="@string/menu_tvstb_power">
+        android:title="@string/menu_tvstb_power" android:icon="@drawable/ic_action_combo_power" android:showAsAction="always">
     </item>
     <item
         android:id="@+id/tv_power"
