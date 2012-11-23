@@ -77,9 +77,6 @@ public class ShortcutsActivity extends BaseActivity {
 			Shortcut item = get(position);
 
 			int layoutId = R.layout.shortcuts_item;
-			if (item.hasColor()) {
-				layoutId = R.layout.shortcuts_item_color;
-			}
 
 			View view = convertView;
 			if (view == null) {
