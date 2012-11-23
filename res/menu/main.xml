@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-  <item android:id="@+id/menu_switch"
+    <item
+        android:id="@+id/tv_power"
+        android:title="@string/menu_tv_power">
+    </item>
+    <item
+        android:id="@+id/stb_power"
+        android:title="@string/menu_stb_power">
+    </item>
+    <item
+        android:id="@+id/menu_switch"
         android:alphabeticShortcut="w"
         android:icon="@drawable/menu_switch"
-        android:title="@string/menu_switch" />
-
-  <item android:title="@string/menu_about"
+        android:title="@string/menu_switch"/>
+    <item
         android:id="@+id/menu_about"
+        android:alphabeticShortcut="a"
         android:icon="@android:drawable/ic_menu_info_details"
-        android:alphabeticShortcut="a" />
+        android:title="@string/menu_about"/>
+
 </menu>
