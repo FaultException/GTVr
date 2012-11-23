@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">Google TV Remote</string>
+  <string name="app_name">GTVr</string>
   <string name="unkown_tgt_name">Unknown</string>
   <string name="unkown_tgt_addr">unknown address</string>
   <string name="ok_text">OK</string>

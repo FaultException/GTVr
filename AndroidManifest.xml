@@ -4,9 +4,9 @@
      in IpRemote/res/values/string.xml to determine if a new version is
      available -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.android.apps.tvremote"
-          android:versionCode="23"
-          android:versionName="1.0.2"
+          package="com.faultexception.gtvr"
+          android:versionCode="1"
+          android:versionName="1.0"
           android:installLocation="auto">
 
   <application android:icon="@drawable/app_icon"
@@ -79,7 +79,7 @@
   <uses-feature android:required="true" android:name="android.hardware.touchscreen" />
   <uses-feature android:required="true" android:name="android.hardware.wifi" />
 
-  <uses-sdk android:minSdkVersion="4"/>
+  <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="16"/>
 
   <supports-screens android:smallScreens="false" />
 </manifest>

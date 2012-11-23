@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <com.google.android.apps.tvremote.widget.ImeInterceptView android:id="@+id/keyboard"
+  <com.faultexception.gtvr.widget.ImeInterceptView android:id="@+id/keyboard"
       android:background="@drawable/touchpad"
       android:focusable="true"
       android:focusableInTouchMode="true"
@@ -19,7 +19,7 @@
       android:layout_centerHorizontal="true"
       android:src="@drawable/touchpad_icon"/>
 
-  <com.google.android.apps.tvremote.widget.FadingTextView
+  <com.faultexception.gtvr.widget.FadingTextView
       android:id="@+id/text_feedback_chars"
       android:background="@android:color/transparent"
       android:layout_width="wrap_content"

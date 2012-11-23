@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res/com.google.android.apps.tvremote"
+  xmlns:app="http://schemas.android.com/apk/res/com.faultexception.gtvr"
   android:id="@+id/MainScreen"
   android:keepScreenOn="true"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
-  <com.google.android.apps.tvremote.layout.FixedLayout
+  <com.faultexception.gtvr.layout.FixedLayout
     android:id="@+id/vertical_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -15,16 +15,16 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentRight="true">
 
-    <com.google.android.apps.tvremote.layout.SlidingLayout
+    <com.faultexception.gtvr.layout.SlidingLayout
       android:id="@+id/slider"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent" />
     <include layout="@layout/subview_main_buttons" app:layout_percent="37.5" />
     <include layout="@layout/subview_bottom_buttons" app:layout_percent="12.5" />
 
-  </com.google.android.apps.tvremote.layout.FixedLayout>
+  </com.faultexception.gtvr.layout.FixedLayout>
 
-  <com.google.android.apps.tvremote.layout.FixedLayout
+  <com.faultexception.gtvr.layout.FixedLayout
     android:id="@+id/vertical_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -48,7 +48,7 @@
         <ImageView
           android:layout_height="fill_parent"
           android:background="@drawable/empty" />
-        <com.google.android.apps.tvremote.widget.KeyCodeButton
+        <com.faultexception.gtvr.widget.KeyCodeButton
           android:id="@+id/button_next_page"
           android:layout_alignParentTop="true"
           android:layout_alignParentRight="true"
@@ -60,9 +60,9 @@
 
     <View 
       app:layout_percent="87.5" />
-  </com.google.android.apps.tvremote.layout.FixedLayout>
+  </com.faultexception.gtvr.layout.FixedLayout>
 
-  <com.google.android.apps.tvremote.widget.HighlightView
+  <com.faultexception.gtvr.widget.HighlightView
     android:id="@+id/HighlightView"
     app:button="@drawable/button_highlight"
     android:layout_width="fill_parent"
@@ -72,7 +72,7 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentRight="true" />
 
-  <com.google.android.apps.tvremote.layout.FixedLayout
+  <com.faultexception.gtvr.layout.FixedLayout
     android:id="@+id/ReversedLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -88,7 +88,7 @@
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       app:layout_percent="75">
-      <com.google.android.apps.tvremote.widget.SoftDpad
+      <com.faultexception.gtvr.widget.SoftDpad
         app:radius_percent_ignore_touch="80"
         app:radius_percent="70"
         app:radius_percent_ok="8"
@@ -102,5 +102,5 @@
         android:focusable="false" />
     </RelativeLayout>
 
-  </com.google.android.apps.tvremote.layout.FixedLayout>
+  </com.faultexception.gtvr.layout.FixedLayout>
 </RelativeLayout>

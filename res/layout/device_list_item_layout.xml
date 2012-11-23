@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view xmlns:android="http://schemas.android.com/apk/res/android"
-    class="com.google.android.apps.tvremote.DeviceFinder$ListEntryView"
+    class="com.faultexception.gtvr.DeviceFinder$ListEntryView"
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
