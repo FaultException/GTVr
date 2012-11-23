@@ -14,23 +14,23 @@
       android:id="@+id/button_search"
       android:layout_span="1"
       android:src="@drawable/icon_25_selector"
-      android:background="@drawable/background_25_selector" />
+      android:background="@drawable/background_sq_selector" />
     <!-- Keyboard -->
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_span="1"
       android:id="@+id/button_keyboard"
       android:src="@drawable/icon_26_selector"
-      android:background="@drawable/background_26_selector" />
+      android:background="@drawable/background_sq_selector" />
     <!-- Voice search -->
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_span="1"
       android:id="@+id/button_voice"
       android:src="@drawable/icon_27_selector"
-      android:background="@drawable/background_27_selector" />
+      android:background="@drawable/background_sq_selector" />
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_span="1"
       android:id="@+id/button_shortcuts"
       android:src="@drawable/icon_28_selector"
-      android:background="@drawable/background_28_selector" />
+      android:background="@drawable/background_sq_selector" />
   </TableRow>
 </TableLayout>

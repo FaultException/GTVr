@@ -14,13 +14,13 @@
       android:layout_span="2"
       app:key_code="KEYCODE_ESCAPE"
       android:src="@drawable/icon_17_selector"
-      android:background="@drawable/background_17_selector" />
+      android:background="@drawable/background_sq_selector" />
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_height="fill_parent"
       android:layout_span="2"
       app:key_code="KEYCODE_MUTE"
       android:src="@drawable/icon_18_selector"
-      android:background="@drawable/background_18_selector" />
+      android:background="@drawable/background_sq_selector" />
   </TableRow>
 
   <TableRow
@@ -31,13 +31,13 @@
       android:layout_span="2"
       app:key_code="KEYCODE_BACK"
       android:src="@drawable/icon_19_selector"
-      android:background="@drawable/background_19_selector" />
+      android:background="@drawable/background_sq_selector" />
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_height="fill_parent"
       android:layout_span="2"
       app:key_code="KEYCODE_HOME"
       android:src="@drawable/icon_20_selector"
-      android:background="@drawable/background_20_selector" />
+      android:background="@drawable/background_sq_selector" />
   </TableRow>
 
   <TableRow
@@ -49,24 +49,24 @@
       android:layout_span="1"
       app:key_code="KEYCODE_LIVE"
       android:src="@drawable/icon_21_selector"
-      android:background="@drawable/background_21_selector" />
+      android:background="@drawable/background_sq_selector" />
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_height="fill_parent"
       android:layout_span="1"
       app:key_code="KEYCODE_WINDOW"
       android:src="@drawable/icon_22_selector"
-      android:background="@drawable/background_22_selector" />
+      android:background="@drawable/background_sq_selector" />
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_height="fill_parent"
       android:layout_span="1"
       app:key_code="KEYCODE_BOOKMARK"
       android:src="@drawable/icon_23_selector"
-      android:background="@drawable/background_23_selector" />
+      android:background="@drawable/background_sq_selector" />
     <com.faultexception.gtvr.widget.KeyCodeButton
       android:layout_height="fill_parent"
       android:layout_span="1"
       app:key_code="KEYCODE_MENU"
       android:src="@drawable/icon_24_selector"
-      android:background="@drawable/background_24_selector" />
+      android:background="@drawable/background_sq_selector" />
   </TableRow>
 </TableLayout>

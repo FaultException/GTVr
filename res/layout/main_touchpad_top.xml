@@ -54,7 +54,7 @@
           android:layout_alignParentRight="true"
           android:src="@drawable/icon_04_buttons_selector"
           android:layout_height="fill_parent"
-          android:background="@drawable/background_04_selector" />
+          android:background="@drawable/background_sq_selector" />
       </TableRow>
     </TableLayout>
 
