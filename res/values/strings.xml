@@ -75,6 +75,9 @@
   <string name="trackball_speed">Trackball speed</string>
   <string name="zoom_speed">Zoom reactivity</string>
   <string name="soft_dpad_speed">Dpad repetition</string>
+  
+  <!-- Jump to channel -->
+  <string name="channel_title">Jump to channel...</string>
 
   <!-- Updates -->
   <string name="update_available">An update is available. Do you want to download it?</string>

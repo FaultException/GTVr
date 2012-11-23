@@ -115,13 +115,14 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1" >
-
+
         <Button
             android:id="@+id/back"
+            style="@style/channelButton"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:text="Back" />
+            android:text="DEL" />
 
         <Button
             android:id="@+id/button0"
@@ -130,13 +131,15 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="0" />
-
+
         <Button
             android:id="@+id/ok"
+            style="@style/channelButton"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="OK" />
+
     </LinearLayout>
 
 </LinearLayout>

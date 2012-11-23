@@ -31,6 +31,7 @@ public class ChannelActivity extends BaseActivity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.channel);
+		setTitle(R.string.channel_title);
 
 		mDisplay = (TextView) findViewById(R.id.display);
 		for (int i = 0; i < 10; ++i) {
@@ -98,27 +99,30 @@ public class ChannelActivity extends BaseActivity implements OnClickListener {
 		final Handler handler = new Handler();
 
 		String number = mCurrentChannel;
+		mCurrentChannel = "";
+
 		for (int j = 0; j < number.length(); ++j) {
 			final int i = Integer.parseInt(number.substring(j, j + 1));
+			final boolean last = j == number.length() - 1;
+			final int n = j;
 			handler.postDelayed(new Runnable() {
 
 				@Override
 				public void run() {
 					getCommands().keyPress(NUM_CODES[i]);
-					mCurrentChannel = mCurrentChannel.substring(1);
+					mCurrentChannel = mCurrentChannel.substring(0, n) + i
+							+ mCurrentChannel.substring(n + 1);
 					updateDisplay();
+
+					if (last) {
+						finish();
+					}
 				}
-			}, j * 340);
+			}, (j + 1) * 340);
+			mCurrentChannel += "-";
 		}
 
-		handler.postDelayed(new Runnable() {
-
-			@Override
-			public void run() {
-				finish();
-			}
-		}, (number.length() + 1) * 340);
-		
 		lock();
+		updateDisplay();
 	}
 }
