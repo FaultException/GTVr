@@ -43,6 +43,7 @@ import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.CountDownLatch;
 
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.SSLContext;
@@ -203,12 +204,27 @@ public final class CoreService extends Service implements ConnectionManager {
 			anymoteSender.disconnect();
 			anymoteSender = null;
 		}
+		
+		// Dirty hack!
+		final CountDownLatch latch = new CountDownLatch(1);
+		new AsyncTask<Void,Void,Void>() {
+			@Override
+			protected Void doInBackground(Void... params) {
+				try {
+					sendSocket.close();
+				} catch (IOException e) {
+					Log.e(LOG_TAG, "failed to close socket");
+				}
+				sendSocket = null;
+				latch.countDown();
+				return null;
+			}
+		}.execute();
 		try {
-			sendSocket.close();
-		} catch (IOException e) {
-			Log.e(LOG_TAG, "failed to close socket");
+			latch.await();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
-		sendSocket = null;
 	}
 
 	/**
