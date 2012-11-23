@@ -185,7 +185,12 @@ public class BaseActivity extends CoreServiceActivity implements
 		case R.id.menu_about:
 			showActivity(AboutActivity.class);
 			return true;
-			
+
+		case R.id.tvstb_power:
+			Action.POWER_TV.execute(getCommands());
+			Action.POWER_STB.execute(getCommands());
+			return true;
+
 		case R.id.tv_power:
 			Action.POWER_TV.execute(getCommands());
 			return true;

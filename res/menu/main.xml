@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
+        android:id="@+id/tvstb_power"
+        android:title="@string/menu_tvstb_power">
+    </item>
+    <item
         android:id="@+id/tv_power"
         android:title="@string/menu_tv_power">
     </item>
