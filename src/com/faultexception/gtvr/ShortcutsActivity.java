@@ -81,8 +81,11 @@ public class ShortcutsActivity extends BaseActivity {
 				layoutId = R.layout.shortcuts_item_color;
 			}
 
-			View view = getLayoutInflater()
-					.inflate(layoutId, parent, false /* don't attach now */);
+			View view = convertView;
+			if (view == null) {
+				view = getLayoutInflater()
+						.inflate(layoutId, parent, false /* don't attach now */);
+			}
 
 			TextView titleView = (TextView) view.findViewById(R.id.text);
 			if (item.hasColor()) {
