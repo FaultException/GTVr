@@ -44,6 +44,7 @@ public class StartupActivity extends CoreServiceActivity {
           showMainActivity();
         }
       });
+      connectButton.setText(R.string.init_keystore);
       
       new KeystoreInitializerTask(getUniqueId()).execute(getKeyStoreManager());
     } else {
@@ -97,6 +98,7 @@ public class StartupActivity extends CoreServiceActivity {
       super.onPostExecute(result);
       keystoreAvailable = true;
       connectButton.setEnabled(true);
+      connectButton.setText(R.string.tutorial_button);
     }
   }
 

@@ -9,6 +9,7 @@
   <!-- Manifest labels -->
   <string name="core_service_label">Google TV Remote Control Service</string>
   <string name="finder_label">Connect to Google TV</string>
+  <string name="init_keystore">Initializing keystore...</string>
   <string name="config_page_label">Your build is:</string>
 
   <!--  Main menu -->
