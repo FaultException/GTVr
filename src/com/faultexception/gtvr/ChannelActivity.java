@@ -5,12 +5,13 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.anymote.Key.Code;
 
-public class ChannelActivity extends BaseActivity implements OnClickListener {
+public class ChannelActivity extends BaseActivity implements OnClickListener, OnLongClickListener {
 	private static final int BUTTON_IDS[] = new int[] { R.id.button0,
 			R.id.button1, R.id.button2, R.id.button3, R.id.button4,
 			R.id.button5, R.id.button6, R.id.button7, R.id.button8,
@@ -43,6 +44,7 @@ public class ChannelActivity extends BaseActivity implements OnClickListener {
 
 		mBackButton = (Button) findViewById(R.id.back);
 		mBackButton.setOnClickListener(this);
+		mBackButton.setOnLongClickListener(this);
 
 		mOKButton = (Button) findViewById(R.id.ok);
 		mOKButton.setOnClickListener(this);
@@ -100,6 +102,10 @@ public class ChannelActivity extends BaseActivity implements OnClickListener {
 
 		String number = mCurrentChannel;
 		mCurrentChannel = "";
+		
+		for (int j = 0; j < 4; ++j) {
+			mCurrentChannel += "-";
+		}
 
 		for (int j = 0; j < number.length(); ++j) {
 			final int i = Integer.parseInt(number.substring(j, j + 1));
@@ -110,8 +116,11 @@ public class ChannelActivity extends BaseActivity implements OnClickListener {
 				@Override
 				public void run() {
 					getCommands().keyPress(NUM_CODES[i]);
-					mCurrentChannel = mCurrentChannel.substring(0, n) + i
-							+ mCurrentChannel.substring(n + 1);
+					if (n < 4) {
+						mCurrentChannel = mCurrentChannel.substring(1) + i;
+					} else {
+						mCurrentChannel += i;
+					}
 					updateDisplay();
 
 					if (last) {
@@ -119,10 +128,19 @@ public class ChannelActivity extends BaseActivity implements OnClickListener {
 					}
 				}
 			}, (j + 1) * 340);
-			mCurrentChannel += "-";
 		}
 
 		lock();
 		updateDisplay();
+	}
+
+	@Override
+	public boolean onLongClick(View v) {
+		if (v == mBackButton) {
+			mCurrentChannel = "";
+			updateDisplay();
+			return true;
+		}
+		return false;
 	}
 }
