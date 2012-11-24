@@ -195,11 +195,11 @@ public class MainActivity extends BaseActivity implements
 
 	// KeyCode handler implementation.
 	public void onRelease(Key.Code keyCode) {
+		playClick();
 		getCommands().key(keyCode, Key.Action.UP);
 	}
 
 	public void onTouch(Key.Code keyCode) {
-		playClick();
 		getCommands().key(keyCode, Key.Action.DOWN);
 	}
 
